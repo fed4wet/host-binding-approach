@@ -1,0 +1,10 @@
+.my-class {
+    width: 500px;
+    cursor: progress;
+}
+
+.btn-icon {
+    padding-left: 5px;
+    position: relative;
+    top: 2px;
+}
