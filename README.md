@@ -1,1 +1,1 @@
-angular-directives-use-case
+Angular HostBinding approach
