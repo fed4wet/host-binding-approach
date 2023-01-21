@@ -1,0 +1,47 @@
+
+.huge-button {
+  font-weight: 900;
+  min-height: 60px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:focus-visible {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: #007dbc65;
+  }
+  &.btn-huge-primary {
+    background-color: #3086b1;
+    color: #fff;
+    border: none;
+
+    &:hover,
+    &:active {
+      background-color: #042233;
+    }
+  }
+
+  &.btn-huge-secondary {
+    background-color: #fff;
+    color: #cc0ba5;
+    border: 1px solid #002f6b30;
+
+    &:hover {
+      color: #fff;
+      background-color: #343a40;
+      border-color: #343a40;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}

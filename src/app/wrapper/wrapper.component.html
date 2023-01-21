@@ -1,24 +1,24 @@
-<button mat-raised-button color="primary" (click)="change('primary')">
+<div class="flex-col row">
+  <button mat-raised-button color="primary" (click)="change('primary')">
     primary
-</button>
-<button mat-raised-button color="accent" (click)="change('secondary')">
+  </button>
+  <button mat-raised-button color="accent" (click)="change('secondary')">
     secondary
-</button>
-<p>---------------------------------------------</p>
+  </button>
+</div>
 
 <div class="flex-col">
-    <button shared-button [buttonTheme]="selectedTheme" class="my-class">Login</button>
-    <button shared-button>Twitter
-        <twitter-icon class="btn-icon"></twitter-icon>
-    </button>
-    <a shared-button href="https://www.linkedin.com/in/oleh-sipiahin/">Readmore ↗</a>
+  <button shared-button [color]="color" disabled>Login</button>
+  <button huge-button [color]="color">Huge Login</button>
+  <button shared-button>Twitter
+    <twitter-icon class="btn-icon"></twitter-icon>
+  </button>
+  <a shared-button href="https://www.linkedin.com/in/oleh-sipiahin/">Readmore ↗</a>
 
-    <p>---------------------------------------------</p>
-
-    <button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
+  <button>Basic</button>
+  <button mat-raised-button color="primary">Primary</button>
+  <button mat-raised-button color="accent">Accent</button>
+  <button mat-raised-button color="warn">Warn</button>
+  <button mat-raised-button disabled>Disabled</button>
 </div>
 

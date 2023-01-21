@@ -8,19 +8,19 @@ import {
 export type ButtonTheme = 'primary' | 'secondary';
 
 @Component({
-    selector: 'button[shared-button], a[shared-button],  p[shared-button]',
+    selector: 'button[huge-button]',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    styleUrls: ['./button-v2.component.scss'],
+    styleUrls: ['./button-huge.component.scss'],
     standalone: true,
     encapsulation: ViewEncapsulation.None,
     template: `
         <ng-content></ng-content>`,
 })
-export class ButtonV2Component {
+export class ButtonHugeComponent {
     @Input() color: ButtonTheme = 'secondary';
 
     @HostBinding('class') get buttonClass(): string {
-        const classes = ['button', `btn-${this.color}`];
+        const classes = ['huge-button', `btn-huge-${this.color}`];
         return classes.filter(Boolean).join(' ');
     }
 
