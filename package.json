@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "update": "ncu --target patch -u"
+    "patch": "ncu --target patch -u",
+    "update": "ncu --target minor -u"
   },
   "dependencies": {
     "@angular/animations": "~15.2.10",
@@ -39,6 +40,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~4.8.4"
+    "typescript": "~4.9.5"
   }
 }
